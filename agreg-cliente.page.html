@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>FORMULARIO INSERSIÓN CLIENTE</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Formulario de registro de cliente</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list lines="full">
+    <ion-button type="button" [routerLink]="['/clientes']" routerLinkActive="router-link-active" expand="block">
+      <ion-icon name="arrow-back-outline">Atrás</ion-icon>
+    </ion-button>
+  </ion-list>
+  <ion-list lines="full">
+    <ion-item>
+      <ion-label position="floating">Código Cliente: </ion-label>
+    <ion-input required readonly placeholder="Código del cliente"></ion-input>
+    </ion-item>
+
+     <ion-item>
+      <ion-label position="floating">Nombres Cliente: </ion-label>
+    <ion-input required readonly placeholder="Nombres del cliente"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Apellido Paterno: </ion-label>
+    <ion-input required readonly placeholder="apellido Paterno"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Apellido Materno: </ion-label>
+    <ion-input required readonly placeholder="apellidos Materno"></ion-input>
+    </ion-item>
+
+     <ion-item>
+      <ion-label position="floating">Lugar de Nacimiento: </ion-label>
+    <ion-input required readonly placeholder="Lugar de Nacimiento"></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="button" color="primary" shape="full">Realizar Cambios</ion-button>
+      </ion-col>
+    </ion-row>
+
+
+
+  </ion-list>
+
+
+</ion-content>
